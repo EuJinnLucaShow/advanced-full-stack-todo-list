@@ -38,7 +38,7 @@ export class TasksService {
 		return deleteTask
 	}
 
-	//private metod
+	//private method
 	private async getOneOrThrow(id: number) {
 		const task = await this.prismaService.task.findUnique({ where: { id } })
 
